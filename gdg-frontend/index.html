@@ -364,6 +364,10 @@
             console.log("Connection lost");
         });
     </script>
+
+    <title>LogiTech</title>
+    <link rel="icon" href="" type="image/icon type">
+
 </head>
 
 <body class="antialiased text-gray-800 min-h-screen flex flex-col">
@@ -891,20 +895,20 @@
                                         const map = new google.maps.Map(
                                             document.getElementById("map"),
                                             {
-                                                center: { lat: 37.7749, lng: -122.4194 }, // San Francisco
+                                                center: { lat: 23.0333, lng: 72.6167 }, // San Francisco
                                                 zoom: 12,
                                             }
                                         );
 
                                         // Add markers
                                         new google.maps.Marker({
-                                            position: { lat: 37.7749, lng: -122.4194 },
+                                            position: { lat: 23.0333, lng: 72.6167 },
                                             map,
                                             title: "Pickup Location",
                                         });
 
                                         new google.maps.Marker({
-                                            position: { lat: 37.7849, lng: -122.4294 },
+                                            position: { lat: 23.0333, lng: 72.6167 },
                                             map,
                                             title: "Delivery Location",
                                         });
@@ -918,8 +922,8 @@
 
                                         directionsService.route(
                                             {
-                                                origin: { lat: 37.7749, lng: -122.4194 },
-                                                destination: { lat: 37.7849, lng: -122.4294 },
+                                                origin: { lat: 23.0333, lng: 72.6167 },
+                                                destination: { lat: 23.2167, lng: 72.6833 },
                                                 travelMode: google.maps.TravelMode.DRIVING,
                                             },
                                             (response, status) => {
